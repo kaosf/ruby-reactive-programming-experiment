@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
 
-gem 'frappuccino'
+gem 'frappuccino', '0.3.0'
