@@ -13,14 +13,14 @@ counter = stream
             .map {|event| event == :pushed ? 1 : 0 } # convert events to ints
             .inject(0) {|sum, n| sum + n } # add them up
 
-counter.now # => 0
+puts counter.now # => 0
 
 button.push
 button.push
 button.push
 
-counter.now # => 3
+puts counter.now # => 3
 
 button.push
 
-counter.now # => 4
+puts counter.now # => 4
